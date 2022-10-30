@@ -87,8 +87,7 @@ body {
 /* ====HEADER ====*/
 .heder-section {
   border-bottom: 1px solid var(--border-heder);
-  width: 1600px;
-  margin: 0 auto;
+
 }
 
 .header-nav {
@@ -156,7 +155,7 @@ body {
   bottom: 0;
   display: inline-block;
   width: 100%;
-  height: 7px;
+  height: 4px;
   border-radius: 2px;
   background-color: var(--acent);
 }
@@ -327,7 +326,6 @@ body {
 .discription-work {
   position: absolute;
   bottom: 0px;
-  left: 0px;
 
   display: flex;
   align-items: center;
@@ -336,9 +334,7 @@ body {
   height: 70px;
 
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 
   color: var(--hero-title);
@@ -693,9 +689,12 @@ body {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.card-portfolio:hover .top-text {
+.card-portfolio:hover .top-text,
+.card-portfolio:focus .top-text {
   transform: translateY(0);
 }
+
+
 
 .card-portfolio:hover,
 .card-portfolio:focus {
@@ -774,10 +773,12 @@ body {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn-modal-close:hover .icon-modal-close {
+.btn-modal-close:hover .icon-modal-close, 
+.btn-modal-close:focus .icon-modal-close {
   fill: var(--acent);
 }
-.btn-modal-close:hover {
+.btn-modal-close:hover,
+.btn-modal-close:focus {
   border: 1px solid var(--acent);
 }
 
